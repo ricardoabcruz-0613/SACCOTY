@@ -1,1 +1,21 @@
-{"name":"clube-sac-coty","version":"1.0.0","private":true,"engines":{"node":">=24.19.0"},"scripts":{"start":"node server.cjs","test":"node --test test.cjs"}}
+{
+  "name": "clube-sac-coty-netlify",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts/check.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "@netlify/database": "2.0.1",
+    "pg": "8.23.1"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.3.16",
+    "esbuild": "0.25.12"
+  }
+}
